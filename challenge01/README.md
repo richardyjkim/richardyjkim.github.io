@@ -19,20 +19,11 @@ As I am refactoring I saw some of the Links and Attributes are not properly link
 
 Here are some quick overview of what I have done 
 
-<<<<<<< HEAD
-```md
-![alt text](Develop/assets/images/ScreenShot1.png)
-![alt text](Develop/assets/images/ScreenShot2.png)
-![alt text](Develop/assets/images/ScreenShot3.png)
-=======
->>>>>>> dcbbd73a080caa5c3eac1142d9c3016bbe383045
+![alt text](./Develop/assets/images/ScreenShot1.png)
+![alt text](./Develop/assets/images/ScreenShot2.png)
+![alt text](./Develop/assets/images/ScreenShot3.png)
 
-![ScreenShot1](https://user-images.githubusercontent.com/77701551/106815973-8706e380-6629-11eb-8cae-e7a7ee0d22c2.png)
-![ScreenShot2](https://user-images.githubusercontent.com/77701551/106816074-aef64700-6629-11eb-8b08-d5b450c692f2.png)
-![ScreenShot3](https://user-images.githubusercontent.com/77701551/106816082-b0c00a80-6629-11eb-83ae-dd24b1dff0ac.png)
-
-
-### Technology
+## Technology
     - html
     - css
     - git
@@ -40,7 +31,6 @@ Here are some quick overview of what I have done
 ## Credits
 
     - Richard Kim: richardyjkim (github)
-
 
 ## License
 
