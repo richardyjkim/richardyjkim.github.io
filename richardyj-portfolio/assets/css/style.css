@@ -1,3 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif
+}
+/* HEADER / NAV BAR STYLES START */
+
+header {
+    padding: 20px 35px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li a:hover {
+    background: #fff;
+    color: black;
+    border-radius: 15px;
+}
+
+/* HEADER / NAVBAR STYLE END */
+
+
+/* HERO STYLE START */
+.hero {
+    background: url("../image/background.jpg") no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+main {
+    padding: 15vw 0px;
+    text-align: center;
+    color: #fff;
+}
+
+main h1 {
+    font-style: 70px;
+    font-weight: 800;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+main h1 p {
+    font-size: 30px;
+}
+.btn {
+    background-color: black;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 15px 40px;
+    display: inline-block;
+    margin:4px 2px;
+}
+.btn:hover {
+    background: gray;
+    transition: black .3s ;
+    
+
 }
