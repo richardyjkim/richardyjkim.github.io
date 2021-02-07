@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
+    position: fixed;
     width: 100%;
     background-image: url("../image/background.jpg");
     background-size: cover;
@@ -69,7 +69,7 @@ header nav ul li a:hover {
 
 /* BACKGROUND/INTRO STYLE START */
 .hero {
-    padding: 65px 35px;
+    padding: 15vh;
     background: url("../image/background.jpg") no-repeat center fixed;
     background-size: cover;
     display: flex;
@@ -94,7 +94,7 @@ main h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 .btn {
     background-color: black;
@@ -118,9 +118,10 @@ p {
     background: whitesmoke;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 90vh;
-    width: 150vh;
+    min-height: 80vh;
+    width: 195vh;
     margin: 0 auto;
+    padding: 20px 20px
 }
 
 .image {
@@ -162,15 +163,96 @@ p {
 /* PEOFILE STYLE ENDS */
 
 /* PORTFOLIO STYLE STARTS */
+.work {
+    position: relative;
+    margin: auto;
+    height: 100vh;
+    width: auto;
+}
 
+.work h1 {
+    position: relative;
+    height: auto;
+    width: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5% 0 2% 0;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 650;
+    letter-spacing: 2px;
+    color: black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    background:whitesmoke;
+}
+.work p {
+    position: relative;
+    height: auto;
+    width: 100%;;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    color: black;
+}
 
+.work .portfolio {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2vmin;
+    grid-auto-flow: dense;
+}
 
+.work .portfolio .img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
 
+.work .portfolio .img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5);
+}
+.work .portfolio .img:first-child {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.text-block {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    right: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #fff
+}
+
+.text-block p {
+    color:#fff;
+    font-size: 10px;
+}
+
+.work .portfolio .img:hover img {
+    filter: none;
+}
 /* PORTFOLIO STYLE ENDS */
 
 
 /* FOOTER SYTLE STARTS */
-.content-footer {
+.footer {
     margin: 50px 0;
     padding: 20px 0;
     text-align: center;
@@ -178,7 +260,7 @@ p {
     text-decoration: none;
 }
 
-.content-footer h2 {
+.footer h2 {
     color: white
 }
 
@@ -190,12 +272,14 @@ p {
     list-style: none;
 }
 
-.content-footer > p, .copy {
+.footer > p, .copy {
     color: whitesmoke;
 }
 
-footer ul li a:hover {
-    background: #fff;
+footer ul li:hover > a {
+
     color: black;
-    border-radius: 15px;
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
 }
