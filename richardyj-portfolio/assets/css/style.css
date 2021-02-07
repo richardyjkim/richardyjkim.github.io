@@ -1,5 +1,10 @@
 
-*{
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --tertiary-color: #f5f5f5;
+}
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,17 +12,19 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
 }
 /* HEADER / NAV BAR STYLES START */
 
 header {
     padding: 20px 35px;
-    background-color: black;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     background-image: url("../image/background.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -29,12 +36,12 @@ header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 30px;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 header nav {
@@ -59,8 +66,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: #fff;
-    color: black;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 15px;
 }
 
@@ -83,7 +90,7 @@ header nav ul li a:hover {
 main {
     padding: 15vw 0px;
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 main h1 {
@@ -97,8 +104,8 @@ p {
     font-size: 18px;
 }
 .btn {
-    background-color: black;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 20px;
     text-decoration: none;
     transition: 0.3s;
@@ -108,18 +115,18 @@ p {
 }
 .btn:hover {
     background: gray;
-    transition: black .3s ;
+    transition: var(--primary-color) .3s ;
 }
 
 /* BACKGROUND/INTRO STYLE END */
 
 /* PROFILE STYLE START */
 .profile {
-    background: whitesmoke;
+    background: var(--tertiary-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 80vh;
-    width: 195vh;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 20px
 }
@@ -129,7 +136,7 @@ p {
 }
 
 .content {
-    background: whitesmoke;
+    background: var(--tertiary-color);
     display: flex;
     justify-content: center;
     background-position: 70%;
@@ -181,10 +188,10 @@ p {
     font-size: 2.8em;
     font-weight: 650;
     letter-spacing: 2px;
-    color: black;
-    border-left: 5px solid black;
-    border-right: 5px solid black;
-    background:whitesmoke;
+    color: var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+    border-right: 5px solid var(--primary-color);
+    background: var(--tertiary-color);
 }
 .work p {
     position: relative;
@@ -194,7 +201,7 @@ p {
     font-weight: 500;
     font-size: 0.7em;
     letter-spacing: 1px;
-    color: black;
+    color: var(--primary-color);
 }
 
 .work .portfolio {
@@ -234,14 +241,14 @@ p {
     text-align: center;
     bottom: 20px;
     right: 10px;
-    background-color: black;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 20px;
-    border: 1px solid #fff
+    border: 1px solid var(--secondary-color)
 }
 
 .text-block p {
-    color:#fff;
+    color: var(--secondary-color);
     font-size: 10px;
 }
 
@@ -256,12 +263,12 @@ p {
     margin: 50px 0;
     padding: 20px 0;
     text-align: center;
-    background-color: black;
+    background-color: var(--primary-color);
     text-decoration: none;
 }
 
 .footer h2 {
-    color: white
+    color: var(--secondary-color)
 }
 
 .social{
@@ -273,13 +280,116 @@ p {
 }
 
 .footer > p, .copy {
-    color: whitesmoke;
+    color: var(--tertiary-color);
 }
 
 footer ul li:hover > a {
 
-    color: black;
+    color: var(--primary-color);
     border-bottom: 2px solid #fff;
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color);
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+}
+  
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+  
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+  
+header nav ul li a {
+    font-size: 20px;
+}
+/* PROFILE SECTION */
+.profile {
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.image {
+    height: 50vh;
+}
+
+.content span{
+    margin: 20px 0;
+}
+
+.content p {
+    font-size: 20px;
+}
+/* PORTFOLIO SECION */
+.work h1 {
+    font-size: 1.8em;
+    width: 400px;
+}
+
+.work p {
+    font-size: 1.2em;
+}
+
+.work .portfolio {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.text-block {
+    position: flex;
+    text-align: center;
+    bottom: 20px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border: 1px solid var(--secondary-color)
+}
+
+.text-block p {
+    color: var(--secondary-color);
+    font-size: 10px;
+}
+}
+/* MEDIA QUERY FOR MOBILE AND SMALLER */
+@media screen and (max-width: 575px)  {
+    .work h1 {
+        font-size: 1.2em;
+        width: 300px;
+    }
+    
+    .work p {
+        font-size: 0.9em;
+    }
+    
+    .work .portfolio {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .text-block {
+        position: flex;
+        text-align: center;
+        bottom: 20px;
+        right: 10px;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 20px;
+        border: 1px solid var(--secondary-color)
+    }
+    
+    .text-block p {
+        color: var(--secondary-color);
+        font-size: 10px;
+    }
+}
+    
