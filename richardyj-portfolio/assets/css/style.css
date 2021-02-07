@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 *{
     box-sizing: border-box;
@@ -8,7 +6,7 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif
+    font-family: "Montserrat", sans-serif;
 }
 /* HEADER / NAV BAR STYLES START */
 
@@ -18,15 +16,19 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: fixed;
+    position: sticky;
     width: 100%;
-    z-index: 999;
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
 }
 
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -65,16 +67,17 @@ header nav ul li a:hover {
 /* HEADER / NAVBAR STYLE END */
 
 
-/* HERO STYLE START */
+/* BACKGROUND/INTRO STYLE START */
 .hero {
-    background: url("../image/background.jpg") no-repeat fixed;
+    padding: 65px 35px;
+    background: url("../image/background.jpg") no-repeat center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 95%;
 }
 
 main {
@@ -84,19 +87,19 @@ main {
 }
 
 main h1 {
-    font-style: 70px;
+    font-size: 36px;
     font-weight: 800;
     margin-top: 0;
     text-transform: uppercase;
 }
 
-main h1 p {
-    font-size: 30px;
+p {
+    font-size: 20px;
 }
 .btn {
     background-color: black;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
     transition: 0.3s;
     padding: 15px 40px;
@@ -106,6 +109,93 @@ main h1 p {
 .btn:hover {
     background: gray;
     transition: black .3s ;
-    
+}
 
+/* BACKGROUND/INTRO STYLE END */
+
+/* PROFILE STYLE START */
+.profile {
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    width: 150vh;
+    margin: 0 auto;
+}
+
+.image {
+    background: url(../image/profile.JPG) center/cover no-repeat;
+}
+
+.content {
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    background-position: 70%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9px;
+}
+
+.content span {
+    height: 0.5px;
+    width: 300px;
+    background: #777;
+    margin: 30px 0;
+}
+
+.content p {
+    padding-bottom: 20px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+/* PEOFILE STYLE ENDS */
+
+/* PORTFOLIO STYLE STARTS */
+
+
+
+
+/* PORTFOLIO STYLE ENDS */
+
+
+/* FOOTER SYTLE STARTS */
+.content-footer {
+    margin: 50px 0;
+    padding: 20px 0;
+    text-align: center;
+    background-color: black;
+    text-decoration: none;
+}
+
+.content-footer h2 {
+    color: white
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    list-style: none;
+}
+
+.content-footer > p, .copy {
+    color: whitesmoke;
+}
+
+footer ul li a:hover {
+    background: #fff;
+    color: black;
+    border-radius: 15px;
 }
