@@ -260,15 +260,16 @@ p {
 
 /* FOOTER SYTLE STARTS */
 .footer {
-    margin: 50px 0;
+    margin: 50px 0px 0px;
     padding: 20px 0;
     text-align: center;
     background-color: var(--primary-color);
     text-decoration: none;
+    bottom: 0px;
 }
 
 .footer h2 {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 .social{
