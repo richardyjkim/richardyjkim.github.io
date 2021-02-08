@@ -21,7 +21,7 @@ Thus, a portfolio is very important from an employer standpoint. In fact, I argu
 
 ## Installation
 
-- Please visit Website www.
+- Please visit Website https://richardyjkim.github.io/richardyj-portfolio
 
 
 ## Usage 
