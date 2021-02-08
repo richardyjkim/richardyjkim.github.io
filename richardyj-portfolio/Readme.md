@@ -30,19 +30,19 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 
 
-![alt text](./richardyj-portfolio/image/screenshot/ss1.png)
+![alt text](./assets/screenshot/ss1.png)
 -Your Toggles
 
-![alt text](./richardyj-portfolio/image/screenshot/ss2.png)
+![alt text](./assets/screenshot/ss2.png)
 -Portfolio Section
 
-![alt text](./richardyj-portfolio/image/screenshot/ss3.png)
+![alt text](./assets/screenshot/ss3.png)
 -Please Contact here
 
-![alt text](./richardyj-portfolio/image/screenshot/ss4.png)
+![alt text](./assets/screenshot/ss4.png)
 -Small screen Friendly
 
-![alt text](./richardyj-portfolio/image/screenshot/ss5.png)
+![alt text](./assets/screenshot/ss5.png)
 -Mobile Freindly
 
 ## Technology
