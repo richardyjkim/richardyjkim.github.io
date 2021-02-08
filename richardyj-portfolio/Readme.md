@@ -40,9 +40,11 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 -Please Contact here
 
 ![alt text](./assets/screenshot/ss4.png)
+
 -Small screen Friendly
 
 ![alt text](./assets/screenshot/ss5.png)
+
 -Mobile Freindly
 
 ## Technology
